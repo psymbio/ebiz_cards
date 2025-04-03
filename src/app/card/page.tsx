@@ -11,7 +11,6 @@ export default function Home() {
         email="john.doe@hsbc.com"
         telephone="+44 20 7991 8888"
         phone="+44 7777 888888"
-        photo="/woman.jpg"
       />
     </div>
   );

@@ -13,7 +13,6 @@ interface BusinessCardProps {
     email: string;
     telephone: string;
     phone: string;
-    photo: string;
 }
 
 const BusinessCard: React.FC<BusinessCardProps> = ({
@@ -23,8 +22,7 @@ const BusinessCard: React.FC<BusinessCardProps> = ({
     address_2,
     email,
     telephone,
-    phone,
-    photo,
+    phone
 }) => {
     const router = useRouter();
     const handleGuide = (e: React.FormEvent) => {
