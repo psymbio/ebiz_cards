@@ -2,10 +2,9 @@
 
 ## Pages
 
-1. Login: 
-2. Card: 
-3. Guide: 
-   
+1. Login: [https://ebiz-cards.vercel.app/](https://ebiz-cards.vercel.app/)
+2. Card: [https://ebiz-cards.vercel.app/card/card]
+3. Guide: [https://ebiz-cards.vercel.app/guide](https://ebiz-cards.vercel.app/guide)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
