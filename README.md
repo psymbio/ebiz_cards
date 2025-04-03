@@ -2,7 +2,7 @@
 
 ## Pages
 
-1. Login: [https://ebiz-cards.vercel.app/](https://ebiz-cards.vercel.app/)
+1. Login: [https://ebiz-cards.vercel.app](https://ebiz-cards.vercel.app)
 2. Card: [https://ebiz-cards.vercel.app/card](https://ebiz-cards.vercel.app/card)
 3. Guide: [https://ebiz-cards.vercel.app/guide](https://ebiz-cards.vercel.app/guide)
 
