@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import Button from "./button";
+import { useRouter } from "next/navigation";
 
 interface BusinessCardProps {
     name: string;
@@ -22,19 +26,17 @@ const BusinessCard: React.FC<BusinessCardProps> = ({
     phone,
     photo,
 }) => {
+    const router = useRouter();
+    const handleGuide = (e: React.FormEvent) => {
+        e.preventDefault();
+        router.push(`/guide`);
+    };
     return (
-        <div className="w-full h-screen flex items-center justify-center bg-gray-10">
+        <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-10">
             <div className="w-[90%] max-w-2xl border-2 border-gray-400 rounded-sm shadow-xl bg-white p-5">
                 {/* Logo & Profile Image */}
                 <div className="flex justify-between items-center">
                     <Image src="/hsbc_logo.png" alt="HSBC Logo" width={120} height={50} />
-                    {/* <Image
-            src={photo}
-            alt="Profile"
-            width={80}
-            height={80}
-            className="rounded-full border-2 border-gray-400"
-          /> */}
                 </div>
 
                 {/* Name & Department */}
@@ -47,9 +49,8 @@ const BusinessCard: React.FC<BusinessCardProps> = ({
                 <hr className="my-6 border-t-3 border-gray-200" />
 
                 <div className="flex justify-center items-center">
-                    <Image src="/qr_code.svg" alt="HSBC Logo" width={120} height={50} />
+                    <Image src="/qr_code.svg" alt="QR Code" width={120} height={50} />
                 </div>
-
 
                 {/* Address */}
                 <div className="text-center text-lg text-gray-900 mt-2">{address_1}</div>
@@ -67,6 +68,10 @@ const BusinessCard: React.FC<BusinessCardProps> = ({
                     <p>{telephone}</p>
                     <p>{phone}</p>
                 </div>
+            </div>
+            {/* Export to Wallet Button */}
+            <div className="mt-4">
+                <Button onClick={handleGuide} text="Export to Wallet" />
             </div>
         </div>
     );

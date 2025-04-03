@@ -12,6 +12,9 @@
   --foreground: #171717;
   --font-sans: "UniversNext", Arial, sans-serif;
   --font-mono: monospace;
+  --hsbcred: #dc3c28;
+  --hsbcreddark: #c93926;
+  --hsbcredlight: #fdf7f7;
 }
 
 @media (prefers-color-scheme: dark) {
